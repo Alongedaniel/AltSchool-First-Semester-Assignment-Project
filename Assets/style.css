@@ -1,0 +1,103 @@
+@font-face{
+    font-family: 'gilroy-regular';
+    src: url('../Assets/Gilroy-Font/Gilroy-Regular.ttf')
+}
+@font-face{
+    font-family: 'gilroy-bold';
+    src: url('../Assets/Gilroy-Font/Gilroy-Bold.ttf')
+}
+@font-face{
+    font-family: 'gilroy-medium';
+    src: url('../Assets/Gilroy-Font/Gilroy-Medium.ttf')
+}
+
+:root{
+    --primaryColor:#0065fe;
+    --textColorDark: #141414;
+    --textColorLight: #ffffff;
+    --textRegular: 'gilroy-regular';
+    --textBold: 'gilroy-bold';
+    --textMedium: 'gilroy-medium';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--textRegular);
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10vw;
+}
+
+/* Header section */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0
+}
+
+.navbar > .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar > .logo > .stroke{
+    width: 2px;
+    height: 25px;
+    background-color: var(--primaryColor);
+    margin: 0 5px;
+}
+
+.navbar > .logo > .logo-title{
+    color: var(--primaryColor);
+    font-family: var(--textBold);
+    font-size: 26px;
+}
+
+.navbar > .nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar > .nav-items > .nav-item{
+    font-size: 1.15rem;
+    color: var(--textColorDark);
+    font-family: var(--textMedium);
+    margin: 0 20px;
+    cursor: pointer;
+    transition: color .4s ease
+}
+
+.navbar > .nav-items > .nav-item:hover{
+    color: var(--primaryColor)
+}
+
+.navbar > .cta{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar > .cta > .btn{
+    border: none;
+    background-color: transparent;
+    color: var(--primaryColor);
+    font-family: var(--textBold);
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    outline: none;
+}
+
+.navbar > .cta > .btn:hover{
+    color: var(--textColorLight);
+    background-color: var(--primaryColor);
+    border-radius: 1.5rem;
+}
