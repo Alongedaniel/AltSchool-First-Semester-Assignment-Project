@@ -27,7 +27,7 @@ html {
   --textBold: "gilroy-bold";
   --textMedium: "gilroy-medium";
   --textHeavy: "gilroy-heavy";
-  --padding-web: 8.75rem;
+  --padding-web: 3.75rem;
 }
 
 @media (max-width: 972px) {
@@ -142,7 +142,7 @@ a {
   display: none;
 }
 
-@media (max-width: 1173px) {
+@media (max-width: 1076px) {
   .navbar > .nav-items,
   .navbar > .cta {
     display: none;
