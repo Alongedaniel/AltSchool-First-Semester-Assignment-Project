@@ -209,7 +209,6 @@ a {
 .hero-section > .frame {
   width: 79%;
   align-self: flex-end;
-  /* float: right; */
   display: inline-flex;
   padding: 2rem 3.75rem;
   flex-direction: column;
@@ -309,6 +308,13 @@ a {
   .hero-section > .frame > .frame-image,
   .hero-section > .frame > .frame-back {
     display: none;
+  }
+}
+
+@media (max-width: 342px){
+    .hero-section > .frame {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -744,7 +750,6 @@ a {
     linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
   );
   position: relative;
-  margin-bottom: 2rem;
 }
 
 .section5 > .img {
