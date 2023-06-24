@@ -30,7 +30,7 @@ html {
   --padding-web: 3.75rem;
 }
 
-@media (max-width: 972px) {
+@media (max-width: 1076px) {
   :root {
     --padding-web: 1.5rem;
   }
@@ -96,8 +96,10 @@ a {
   list-style: none;
   display: flex;
   align-items: center;
-  flex: 1;
-  justify-content: center;
+  /* gap: 2rem; */
+  /* flex: 1; */
+  /* margin: 0 50px; */
+  justify-content: space-between;
 }
 
 .navbar > .nav-items > li > .nav-item {
@@ -142,7 +144,7 @@ a {
   display: none;
 }
 
-@media (max-width: 1076px) {
+@media (max-width: 1005px) {
   .navbar > .nav-items,
   .navbar > .cta {
     display: none;
