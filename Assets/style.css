@@ -27,7 +27,7 @@ html {
   --textBold: "gilroy-bold";
   --textMedium: "gilroy-medium";
   --textHeavy: "gilroy-heavy";
-  --padding-web: 3.75rem;
+  --padding-web: 5.75rem;
 }
 
 @media (max-width: 972px) {
